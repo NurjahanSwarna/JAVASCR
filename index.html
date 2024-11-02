@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="tagLine">
+     
+    <script>
+    
+const result = document.getElementById('tagLine');
+result.style.backgroundColor = 'bisque'
+const section = document.createElement('section')
+section.style.width = ('80%');
+section.style.height = ('100%');
+section.style.margin = ("0 auto");
+result.appendChild(section)
+const div1 =document.createElement('div');
+
+const heading = document.createElement('h1')
+heading.innerText = "Welcome to JS DOM Test!!";
+heading.style.fontSize = ('40px')
+heading.style.color = ('white')
+heading.style.backgroundColor = ('blue')
+heading.style.padding = ('15px')
+heading.style.textAlign = ('center')
+div1.appendChild(heading)
+// 2nd div.....prants div
+const div2 =document.createElement('div');
+div2.style.display = ('flex')
+div2.style.justifyContent = ('space-between')
+
+
+// Child div1
+const ChildDiv1 = document.createElement("div")
+ChildDiv1.style.width = ("540px");
+ChildDiv1.style.height = ("350px");
+ChildDiv1.style.border = ("3px solid black");
+ChildDiv1.style.borderRadius = ("30px");
+ChildDiv1.style.backgroundColor = ('white')
+ChildDiv1.style.marginRight = ('10px')
+
+// ChildDiv1Heading
+const ChildDiv1Heading = document.createElement('p');
+ChildDiv1Heading.innerText = 'List of Books'
+ChildDiv1Heading.style.color = ('rgb(101, 228, 228)')
+ChildDiv1Heading.style.fontSize = ('40px')
+ChildDiv1Heading.style.fontWeight = ('bold')
+
+ChildDiv1.appendChild(ChildDiv1Heading)
+// div1 ar ul
+const ul1 = document.createElement('ul')
+ChildDiv1.appendChild(ul1);
+// First div a ul ar li
+
+const li1 = document.createElement('li')
+li1.innerText = 'Book name -1'
+li1.style.fontSize = ('30px')
+ul1.appendChild(li1)
+
+const li2 = document.createElement('li')
+li2.innerText = 'Book name -2'
+li2.style.fontSize = ('30px')
+ul1.appendChild(li2)
+
+const li3 = document.createElement('li')
+li3.innerText = 'Book name -3'
+li3.style.fontSize = ('30px')
+li3.style.color = ('green')
+ul1.appendChild(li3)
+
+const li4 = document.createElement('li')
+li4.innerText = 'Book name -4'
+li4.style.fontSize = ('30px')
+ul1.appendChild(li4)
+
+const li5 = document.createElement('li')
+li5.innerText = 'Book name -5'
+li5.style.fontSize = ('30px')
+li5.style.color =('brown')
+ul1.appendChild(li5)
+
+
+
+// // Child div2
+const ChildDiv2 = document.createElement("div")
+ChildDiv2.style.width = ("550px");
+ChildDiv2.style.height = ("350px");
+ChildDiv2.style.border = ("3px solid black");
+ChildDiv2.style.borderRadius = ("30px");
+ChildDiv2.style.backgroundColor = ('white')
+ChildDiv2.style.marginRight = ('10px')
+
+
+// ChildDiv2Heading
+const ChildDiv2Heading = document.createElement('p');
+ChildDiv2Heading.innerText = 'List of fruits'
+ChildDiv2Heading.style.color = ('brown')
+ChildDiv2Heading.style.fontSize = ('40px')
+ChildDiv2Heading.style.fontWeight = ('bold')
+ChildDiv2.appendChild(ChildDiv2Heading)
+// div2 ar ul
+
+const ul2 =document.createElement('ul');
+ChildDiv2.appendChild(ul2);
+// div2 ar li list
+ const ul2Li =document.createElement('li')
+ ul2Li.innerText = 'fruits name -1'
+ ul2Li.style.fontSize = ('30px')
+ ul2.appendChild(ul2Li)
+
+ const ul2Li1 =document.createElement('li')
+ ul2Li1.innerText = 'fruits name -2'
+ ul2Li1.style.fontSize = ('30px')
+ ul2.appendChild(ul2Li1)
+
+ const ul2Li2 =document.createElement('li')
+ ul2Li2.innerText = 'fruits name -3'
+ ul2Li2.style.fontSize = ('30px')
+ ul2Li2.style.color = ('red')
+ ul2.appendChild(ul2Li2)
+
+ const ul2Li3 =document.createElement('li')
+ ul2Li3.innerText = 'fruits name -4'
+ ul2Li3.style.fontSize = ('30px')
+ ul2Li3.style.color = ('blue')
+ ul2.appendChild(ul2Li3)
+ const ul2Li4 =document.createElement('li')
+ ul2Li4.innerText = 'fruits name -5'
+ ul2Li4.style.fontSize = ('30px')
+ ul2Li4.style.color = ('red')
+ ul2.appendChild(ul2Li4)
+
+
+//  child div 3
+
+const ChildDiv3 = document.createElement("div")
+ChildDiv3.style.width = ("600px");
+ChildDiv3.style.height = ("350px");
+ChildDiv3.style.border = ("3px solid black");
+ChildDiv3.style.borderRadius = ("30px");
+ChildDiv3.style.backgroundColor = ('white')
+// ChildDiv3.style.marginLeft = ('10px')
+
+
+// // ChildDiv2Heading
+const ChildDiv3Heading = document.createElement('p');
+ChildDiv3Heading.innerText = 'List of fruits'
+ChildDiv3Heading.style.color = ('brown')
+ChildDiv3Heading.style.fontSize = ('40px')
+ChildDiv3Heading.style.fontWeight = ('bold')
+ChildDiv3.appendChild(ChildDiv3Heading)
+// // div2 ar ul
+
+const ul3 =document.createElement('ul');
+ChildDiv3.appendChild(ul3);
+// div3 ar li list
+ const ul3Li =document.createElement('li')
+ ul3Li.innerText = 'fruits name -1'
+ ul3Li.style.fontSize = ('30px')
+ ul3.appendChild(ul3Li)
+
+ const ul3Li1 =document.createElement('li')
+ ul3Li1.innerText = 'fruits name -2'
+ ul3Li1.style.fontSize = ('30px')
+ ul3.appendChild(ul3Li1)
+
+ const ul3Li2 =document.createElement('li')
+ ul3Li2.innerText = 'fruits name -3'
+ ul3Li2.style.fontSize = ('30px')
+ ul3Li2.style.color = ('red')
+ ul3.appendChild(ul3Li2)
+
+ const ul3Li3 =document.createElement('li')
+ ul3Li3.innerText = 'fruits name -4'
+ ul3Li3.style.fontSize = ('30px')
+ ul3Li3.style.color = ('blue')
+ ul3.appendChild(ul3Li3)
+ const ul3Li4 =document.createElement('li')
+ ul3Li4.innerText = 'fruits name -5'
+ ul3Li4.style.fontSize = ('30px')
+ ul3Li4.style.color = ('red')
+ ul3.appendChild(ul3Li4)
+
+
+
+
+// Child div-4
+// const div3 = document.createElement('div')
+// const ChildDiv4 = document.createElement("div")
+// ChildDiv4.style.width = ("600px");
+// ChildDiv4.style.height = ("350px");
+// ChildDiv4.style.border = ("5px solid black");
+// ChildDiv4.style.borderRadius = ("30px")
+// ChildDiv4.style.backgroundColor = ('white')
+
+
+// // // ChildDiv2Heading
+// const ChildDiv3Heading = document.createElement('p');
+// ChildDiv3Heading.innerText = 'List of fruits'
+// ChildDiv3Heading.style.color = ('brown')
+// ChildDiv3Heading.style.fontSize = ('40px')
+// ChildDiv3Heading.style.fontWeight = ('bold')
+// ChildDiv3.appendChild(ChildDiv3Heading)
+// // // div2 ar ul
+
+// const ul3 =document.createElement('ul');
+// ChildDiv3.appendChild(ul3);
+// // div3 ar li list
+//  const ul3Li =document.createElement('li')
+//  ul3Li.innerText = 'fruits name -1'
+//  ul3Li.style.fontSize = ('30px')
+//  ul3.appendChild(ul3Li)
+
+//  const ul3Li1 =document.createElement('li')
+//  ul3Li1.innerText = 'fruits name -2'
+//  ul3Li1.style.fontSize = ('30px')
+//  ul3.appendChild(ul3Li1)
+
+//  const ul3Li2 =document.createElement('li')
+//  ul3Li2.innerText = 'fruits name -3'
+//  ul3Li2.style.fontSize = ('30px')
+//  ul3Li2.style.color = ('red')
+//  ul3.appendChild(ul3Li2)
+
+//  const ul3Li3 =document.createElement('li')
+//  ul3Li3.innerText = 'fruits name -4'
+//  ul3Li3.style.fontSize = ('30px')
+//  ul3Li3.style.color = ('blue')
+//  ul3.appendChild(ul3Li3)
+//  const ul3Li4 =document.createElement('li')
+//  ul3Li4.innerText = 'fruits name -5'
+//  ul3Li4.style.fontSize = ('30px')
+//  ul3Li4.style.color = ('red')
+//  ul3.appendChild(ul3Li4)
+
+
+
+
+
+
+
+section.appendChild(div1)
+section.appendChild(div2)
+div2.appendChild(ChildDiv1)
+div2.appendChild(ChildDiv2)
+div2.appendChild(ChildDiv3)
+div2.appendChild(ChildDiv4)
+
+    </script>
+</body>
+</html>
